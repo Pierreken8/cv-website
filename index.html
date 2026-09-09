@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lievin Karambizi | System & Network Engineer</title>
+    <!-- Font Awesome voor icoontjes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Eigen CSS (exact kleine letters!) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Glow Background -->
+    <div class="ambient-blur blur-1"></div>
+    <div class="ambient-blur blur-2"></div>
+
+    <!-- Navigatie -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <i class="fas fa-terminal logo-icon"></i>
+            <span>Lievin Karambizi</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item active">Home</a></li>
+            <li><a href="#over" class="nav-item">Over mij</a></li>
+            <li><a href="#vaardigheden" class="nav-item">Skills</a></li>
+            <li><a href="#ervaring" class="nav-item">Ervaring</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+        <a href="cv.pdf" target="_blank" class="nav-cv-btn">
+            <i class="fas fa-file-pdf"></i> CV
+        </a>
+    </nav>
+
+    <!-- Hero / Home Sectie -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="status-badge">
+                <span class="pulse-dot"></span> Beschikbaar voor IT-opportuniteiten
+            </div>
+            <h1>Hallo,<br>Mijn naam is <span class="highlight-text">Lievin</span> Karambizi</h1>
+            <p class="subtitle">Student Systeem- & Netwerkbeheer / IT Support met een passie voor homelabs, Linux en netwerkautomatisering.</p>
+            
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">
+                    Neem contact op <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="lievin_karambizi.pdf" target="_blank" class="nav-cv-btn">
+            <i class="fas fa-file-pdf"></i> CV
+        </a>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <img src="profielfoto.jpg" alt="Lievin Karambizi" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Over Mij Sectie -->
+    <section id="over" class="content-section">
+        <h2 class="section-title">Over mij</h2>
+        <div class="about-card">
+            <p class="about-text">
+                Gedreven student Systeem- & Netwerkbeheer met een hands-on mentaliteit. In mijn eigen homelab bouw en beheer ik zelfstandig gecontaineriseerde omgevingen met Docker, Nginx Reverse Proxies, Cloudflare Tunnels en beveiligde netwerkstructuren.
+            </p>
+        </div>
+    </section>
+
+    <!-- Vaardigheden & Tech Stack -->
+    <section id="vaardigheden" class="content-section">
+        <h2 class="section-title">Tech Stack & Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-linux skill-icon"></i>
+                <h3>Linux & Server Admin</h3>
+                <p>Ubuntu, Debian, Bash scripting en systeembeheer.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-docker skill-icon"></i>
+                <h3>Docker & Virtualisatie</h3>
+                <p>Containerisatie, Docker Compose, Dockge & Portainer.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-network-wired skill-icon"></i>
+                <h3>Networking & Security</h3>
+                <p>Cloudflare Tunnels, DNS, AdGuard, Nginx Proxy Manager & VPN's.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code skill-icon"></i>
+                <h3>Web Development</h3>
+                <p>HTML5, CSS3, JavaScript & Webhosting via Nginx.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ervaring Sectie -->
+    <section id="ervaring" class="content-section">
+        <h2 class="section-title">Ervaring</h2>
+        
+        <div class="experience-card">
+            <div class="exp-img">
+                <i class="fas fa-server"></i>
+            </div>
+            <div class="exp-info">
+                <span class="exp-date">Februari 2026 – Juni 2026</span>
+                <h3>Stagiair Systeem- & Netwerkbeheer</h3>
+                <h4>Campus Ledebaan Aalst</h4>
+                <p>Beheer, ondersteuning en onderhoud van actieve netwerk- en IT-infrastructuur.</p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="exp-img">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="exp-info">
+                <span class="exp-date">Januari 2020</span>
+                <h3>Front-end & Back-end Developer</h3>
+                <h4>BeBaBalloon — Aalst</h4>
+                <p>Ontwikkeling van de volledige bedrijfswebsite en implementatie van weboplossingen.</p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="exp-img">
+                <i class="fas fa-headset"></i>
+            </div>
+            <div class="exp-info">
+                <span class="exp-date">April 2019</span>
+                <h3>IT Support Stagiair</h3>
+                <h4>Scholengroep Dender — Aalst / Denderleeuw</h4>
+                <p>Support, hard- en softwareinstallatie en trouble-shooting samen met de hoofd-systeembeheerder.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Sectie -->
+    <section id="contact" class="content-section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:Lievinkrb@gmail.com" class="contact-card">
+                <i class="fas fa-envelope"></i> Lievinkrb@gmail.com
+            </a>
+            <a href="tel:0499199238" class="contact-card">
+                <i class="fas fa-phone"></i> 0499199238
+            </a>
+            <a href="lievin_karambizi.pdf" target="_blank" class="contact-card">
+                <i class="fas fa-file-pdf"></i> Bekijk CV (PDF)
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
