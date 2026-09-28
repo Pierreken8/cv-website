@@ -1,13 +1,15 @@
 // Actieve tabblad indicatie tijdens het scrollen
 const sections = document.querySelectorAll('section');
 const navItems = document.querySelectorAll('.nav-item');
+const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
     let current = '';
+    const navHeight = navbar ? navbar.offsetHeight : 100;
     
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        if (pageYOffset >= (sectionTop - 180)) {
+        if (window.pageYOffset >= (sectionTop - navHeight - 30)) {
             current = section.getAttribute('id');
         }
     });
