@@ -1,4 +1,4 @@
-/* Ultra-Pro Theme - Esthetisch Grijs & Glassmorphism */
+/* Grijze kleur */
 :root {
     --bg-main: #bebec4;
     --bg-card: rgba(235, 235, 240, 0.75);
@@ -11,7 +11,7 @@
     --border-hover: rgba(0, 0, 0, 0.25);
 }
 
-/* 1. VERHINDER HORIZONTAAL SCROLLEN GLOBAAL */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@ body {
     padding-top: 90px;
 }
 
-/* Ambient Glow Background - Binnen het scherm gehouden */
+
 .ambient-blur {
     position: absolute;
     width: 300px;
@@ -51,7 +51,7 @@ body {
 .blur-1 { top: -50px; left: -50px; }
 .blur-2 { top: 800px; right: -50px; }
 
-/* Wrapper voor grote schermen */
+
 .hero-section, 
 .content-section {
     width: 100%;
@@ -423,9 +423,7 @@ body {
     max-width: 100%;
 }
 
-/* ==========================================================================
-   STRICTE MOBIELE OPTIMALISATIE (GEEN HORIZONTAAL SCROLLEN)
-   ========================================================================== */
+
 
 @media (max-width: 1024px) {
     .hero-section {
@@ -444,7 +442,7 @@ body {
         padding-top: 105px;
     }
 
-    /* Compacte navigatie die precies op de pagina past */
+    
     .navbar {
         padding: 10px 12px;
         flex-direction: column;
@@ -459,7 +457,7 @@ body {
         gap: 10px;
         width: 100%;
         justify-content: center;
-        flex-wrap: wrap; /* Zorgt dat de links netjes onder elkaar vouwen indien nodig */
+        flex-wrap: wrap; 
     }
 
     .nav-item {
