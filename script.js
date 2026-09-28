@@ -1,4 +1,4 @@
-// Actieve tabblad indicatie tijdens het scrollen
+// Actieve tabblad tijdens het scrollen
 const sections = document.querySelectorAll('section');
 const navItems = document.querySelectorAll('.nav-item');
 const navbar = document.querySelector('.navbar');
