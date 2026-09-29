@@ -282,14 +282,25 @@ body {
     margin-bottom: 30px;
 }
 
-.about-card {
+/* Kaarten + Hover Effecten */
+
+.about-card, .skill-card, .experience-card, .contact-card {
     background: var(--bg-card);
-    padding: 28px;
     border-radius: 24px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
     backdrop-filter: blur(12px);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.about-card {
+    padding: 28px;
     width: 100%;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
 }
 
 .about-text {
@@ -306,20 +317,30 @@ body {
 }
 
 .skill-card {
-    background: var(--bg-card);
     padding: 24px;
     border-radius: 20px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
     display: flex;
     flex-direction: column;
     gap: 8px;
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+    background: var(--bg-card-hover);
+    border-color: rgba(0, 0, 0, 0.25);
 }
 
 .skill-icon {
     font-size: 2rem;
     color: var(--text-primary);
     margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+    transform: scale(1.15);
 }
 
 .skill-card h3 {
@@ -337,14 +358,16 @@ body {
     display: flex;
     gap: 24px;
     margin-bottom: 24px;
-    background: var(--bg-card);
     padding: 24px;
-    border-radius: 24px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12px);
     width: 100%;
     align-items: center;
+    cursor: pointer;
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .exp-img {
@@ -401,18 +424,22 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background: var(--bg-card);
     padding: 16px 24px;
     border-radius: 16px;
-    border: 1px solid var(--border-color);
     color: var(--text-primary);
     text-decoration: none;
     font-weight: 600;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(12px);
     word-break: break-all;
     max-width: 100%;
 }
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+    background: var(--bg-card-hover);
+}
+
+/* Responsive instellingen */
 
 @media (max-width: 1024px) {
     .hero-section {
@@ -513,4 +540,26 @@ body {
         width: 100%;
         justify-content: center;
     }
+}
+
+/* Font Awesome override */
+i[class*="fa-"], 
+i[class*="fa-"]::before {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    text-rendering: auto !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+i.fa-brands, 
+i.fa-brands::before {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400 !important;
+}
+
+i.fa-solid, 
+i.fa-solid::before {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
 }
