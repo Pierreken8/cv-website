@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #c3c8cf;
+    background-color: #c0c3ca;
     color: #1a202c;
     line-height: 1.5;
     font-size: 0.95rem;
@@ -18,23 +18,23 @@ body {
 
 i[class*="fa-"], 
 i[class*="fa-"]::before {
-    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
-    font-style: normal !important;
-    font-variant: normal !important;
-    text-rendering: auto !important;
-    -webkit-font-smoothing: antialiased !important;
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands";
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 
 i.fa-brands, 
 i.fa-brands::before {
-    font-family: "Font Awesome 6 Brands" !important;
-    font-weight: 400 !important;
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
 }
 
 i.fa-solid, 
 i.fa-solid::before {
-    font-family: "Font Awesome 6 Free" !important;
-    font-weight: 900 !important;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
 }
 
 .ambient-blur {
@@ -43,7 +43,7 @@ i.fa-solid::before {
     filter: blur(120px);
     z-index: -1;
     pointer-events: none;
-    opacity: 0.35;
+    opacity: 0.25;
 }
 
 .blur-1 {
@@ -69,7 +69,7 @@ i.fa-solid::before {
     padding: 0.9rem 8%;
     position: sticky;
     top: 0;
-    background: rgba(195, 200, 207, 0.85);
+    background: rgba(192, 195, 202, 0.85);
     backdrop-filter: blur(120px);
     -webkit-backdrop-filter: blur(120px);
     z-index: 1000;
@@ -147,7 +147,7 @@ i.fa-solid::before {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.45);
     padding: 0.35rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -218,7 +218,7 @@ i.fa-solid::before {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: #e2e8f0;
+    background: #ffffff;
     color: #0f172a;
     padding: 0.7rem 1.4rem;
     border-radius: 10px;
@@ -229,7 +229,7 @@ i.fa-solid::before {
 }
 
 .btn-secondary:hover {
-    background: #cbd5e1;
+    background: #f8fafc;
 }
 
 .hero-image-wrapper {
@@ -261,10 +261,10 @@ i.fa-solid::before {
 }
 
 .about-card {
-    background: #e2e8f0;
+    background: rgba(255, 255, 255, 0.35);
     border-radius: 18px;
     padding: 1.5rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .about-text {
@@ -280,10 +280,10 @@ i.fa-solid::before {
 }
 
 .skill-card {
-    background: #e2e8f0;
+    background: rgba(255, 255, 255, 0.35);
     border-radius: 18px;
     padding: 1.5rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .skill-icon {
@@ -305,14 +305,14 @@ i.fa-solid::before {
 }
 
 .experience-card {
-    background: #e2e8f0;
+    background: rgba(255, 255, 255, 0.35);
     border-radius: 18px;
     padding: 1.2rem 1.6rem;
     margin-bottom: 1rem;
     display: flex;
     align-items: flex-start;
     gap: 1.2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     transition: transform 0.2s ease;
 }
 
@@ -321,7 +321,7 @@ i.fa-solid::before {
 }
 
 .exp-img {
-    background: #cbd5e1;
+    background: rgba(0, 0, 0, 0.06);
     color: #0f172a;
     width: 48px;
     height: 48px;
@@ -421,8 +421,8 @@ i.fa-solid::before {
     padding: 0.45rem 0.9rem;
     border-radius: 8px;
     background: #ffffff;
-    color: #0f172a !important;
-    text-decoration: none !important;
+    color: #0f172a;
+    text-decoration: none;
     font-weight: 600;
     font-size: 0.82rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
@@ -436,7 +436,7 @@ i.fa-solid::before {
 
 .btn-secondary-proj {
     background: rgba(0, 0, 0, 0.06);
-    color: #334155 !important;
+    color: #334155;
     box-shadow: none;
 }
 
@@ -454,20 +454,20 @@ i.fa-solid::before {
     display: flex;
     align-items: center;
     gap: 0.65rem;
-    background: #e2e8f0;
+    background: rgba(255, 255, 255, 0.35);
     padding: 0.85rem 1.3rem;
     border-radius: 14px;
     color: #0f172a;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     transition: transform 0.2s, background 0.2s;
 }
 
 .contact-card:hover {
     transform: translateY(-2px);
-    background: #cbd5e1;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 900px) {
